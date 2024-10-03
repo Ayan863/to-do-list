@@ -1,0 +1,95 @@
+.todo-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .buttons {
+            display: flex;
+            // width: 80%;
+            padding-bottom: 10px;
+            justify-content: space-between;
+
+            .add {
+                color: #fff;
+                background-color: #606EEB;
+
+            }
+
+            button {
+                border-radius: 5px;
+                height: 30px;
+                width: 100px;
+                border: none;
+                background-color: #CCCEDF;
+                color: #fff;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+
+
+        .task {
+            background-color: #ECEDF6;
+            width: 80%;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .right {
+
+                display: flex;
+                gap: 10px;
+
+                .check {
+                    position: relative;
+
+                    .tik {
+                        display: none;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+
+                .txt {
+                    input {
+                        border: none;
+                        background-color: #ECEDF6;
+                        outline: none
+                    }
+
+                    .active {
+                        color: red;
+                    }
+
+                    .date {
+                        color: gray;
+                    }
+                }
+            }
+
+            .icons {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+        .tasks{
+            display: flex;
+            justify-content: space-between;
+            // flex-direction: column;
+        }
+    }
+}
